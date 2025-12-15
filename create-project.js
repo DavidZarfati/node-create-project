@@ -35,6 +35,12 @@ fs.writeFileSync(`${progetto}/package.json`, JSON.stringify(contenutoJson))
 const gitignoreContent = "node_modules \n.env";
 fs.writeFileSync(`${progetto}/.gitignore`, gitignoreContent)
 
+const cssContent = "body{\nbackground-color: red;\n}"
+// fs.mkdirSync(`${progetto}/Css`)
+// fs.writeFileSync(`${progetto}/Css/app.css`, cssContent)
+
+
+
 console.log(`${progetto} è stato creato con successo`)
 console.log("ora fai:");
 console.log(`cd ${progetto}`);
